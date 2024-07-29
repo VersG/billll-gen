@@ -1,0 +1,71 @@
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    color: white;
+  }
+  50% {
+    transform: translateY(-20px);
+    color: #ffd200;
+  }
+}
+
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #98d3f3;
+  top: 0;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loading-img {
+  width: 400px;
+}
+
+.loading-text {
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: -0px -0px 0 #597cff, 0px 0px 0 #597cff, -0px 0px 0 #597cff,
+    3px 3px 0 #597cff;
+  margin-top: 20px; /* Add some space between the image and the text */
+  color: white;
+}
+
+.loading-char {
+  display: inline-block;
+  animation: bounce 1.5s infinite;
+}
+
+.loading-char:nth-child(1) {
+  animation-delay: 0s;
+}
+.loading-char:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loading-char:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loading-char:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loading-char:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loading-char:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loading-char:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+#content {
+  display: none; /* Hide content until fully loaded */
+  position: relative;
+}

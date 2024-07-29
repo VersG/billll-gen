@@ -1,0 +1,532 @@
+body {
+  background-color: #98d3f3;
+  min-height: fit-content;
+  height: 100vh;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("../Imgs/background.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 80px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.header-el {
+  width: 250px;
+}
+
+.scroll-right,
+.scroll-left {
+  height: 74px;
+  width: 60px;
+  background-color: #597cff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+}
+
+.scroll-right {
+  right: 0;
+}
+
+.scroll-left {
+  left: 0;
+}
+
+.back-button {
+  align-items: center;
+  background-color: #ffd200;
+  box-shadow: rgba(89, 124, 255, 1) 7px 7px;
+  cursor: pointer;
+  color: #597cff;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transform: rotate(-5deg);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: fit-content;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.slogan {
+  color: white;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: -0px -0px 0 #597cff, 0px 0px 0 #597cff, -0px 0px 0 #597cff,
+    3px 3px 0 #597cff;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px;
+  flex-direction: row;
+}
+
+.laboratory-container {
+  background-color: white;
+  box-shadow: rgba(89, 124, 255, 1) 7px 7px;
+  color: #2b2b4f;
+  padding: 40px 0px;
+}
+
+.laboratory-title,
+.laboratory-elements {
+  padding: 0px 40px;
+}
+
+.laboratory-elements {
+  height: 411px;
+  overflow-y: scroll;
+  scrollbar-color: #ffd200 white;
+}
+
+.laboratory-title {
+  font-size: 34px;
+  margin-top: 0;
+}
+
+.laboratory-backgrounds h4 {
+  margin-top: 0;
+}
+
+.laboratory-background,
+.laboratory-skin,
+.laboratory-glasse,
+.laboratory-mouth,
+.laboratory-eye,
+.laboratory-clothe,
+.laboratory-head {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 2px solid #2b2b4f;
+  display: inline-block;
+  position: relative;
+}
+
+.laboratory-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* .laboratory-background {
+} */
+
+.laboratory-backgrounds-container,
+.laboratory-skins-container,
+.laboratory-mouths-container,
+.laboratory-eyes-container,
+.laboratory-glasses-container,
+.laboratory-clothes-container,
+.laboratory-heads-container {
+  display: flex;
+  position: relative;
+}
+
+.laboratory-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.laboratory-backgrounds-wraper,
+.laboratory-skins-wraper,
+.laboratory-mouths-wraper,
+.laboratory-eyes-wraper,
+.laboratory-glasses-wraper,
+.laboratory-clothes-wraper,
+.laboratory-heads-wraper {
+  width: 482px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.laboratory-backgrounds-wraper::-webkit-scrollbar,
+.laboratory-skins-wraper::-webkit-scrollbar,
+.laboratory-mouths-wraper::-webkit-scrollbar,
+.laboratory-eyes-wraper::-webkit-scrollbar,
+.laboratory-glasses-wraper::-webkit-scrollbar,
+.laboratory-clothes-wraper::-webkit-scrollbar,
+.laboratory-heads-wraper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
+}
+
+/* .laboratory-skin {
+} */
+
+.pfp-container {
+  padding: 0px 0 40px;
+}
+
+.pfp {
+  height: 350px;
+  width: 350px;
+  border: 5px solid white;
+  margin: auto;
+}
+
+.pfp-elements {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pfp-img-elements {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+#pfp-background {
+  z-index: 0;
+}
+
+#pfp-skin {
+  z-index: 1;
+}
+
+#pfp-mouth {
+  z-index: 3;
+}
+
+#pfp-clothes {
+  z-index: 2;
+}
+
+#pfp-eyes {
+  z-index: 4;
+}
+
+#pfp-head {
+  z-index: 5;
+}
+#pfp-glasses {
+  z-index: 6;
+}
+
+.random-button,
+.download-button {
+  box-shadow: rgba(89, 124, 255, 1) 7px 7px;
+  width: fit-content;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: auto;
+  cursor: pointer;
+}
+
+.random-button {
+  background-color: white;
+  color: #597cff;
+  transform: rotate(3deg);
+}
+
+.download-button {
+  background-color: #ffd200;
+  color: #597cff;
+  margin-top: 30px;
+  transform: rotate(-3deg);
+}
+
+.hidden-lab {
+  display: none;
+}
+
+.bear-text {
+  position: fixed;
+  color: #597dff94;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: -9999;
+}
+
+@media only screen and (max-width: 1600px) {
+  .back-button {
+    font-size: 25px;
+    padding: 10px 5px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .slogan {
+    font-size: 30px;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px;
+  }
+
+  .laboratory-container {
+    padding: 20px 0px;
+  }
+
+  .laboratory-background,
+  .laboratory-skin,
+  .laboratory-mouth,
+  .laboratory-eye,
+  .laboratory-glasse,
+  .laboratory-clothe,
+  .laboratory-head {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .laboratory-skins-wraper,
+  .laboratory-backgrounds-wraper,
+  .laboratory-mouths-wraper,
+  .laboratory-eyes-wraper,
+  .laboratory-glasses-wraper,
+  .laboratory-clothes-wraper,
+  .laboratory-heads-wraper {
+    width: 340px;
+  }
+
+  .laboratory-title,
+  .laboratory-elements {
+    padding: 0px 30px;
+  }
+
+  .laboratory-elements {
+    height: 411px;
+  }
+
+  .laboratory-title {
+    font-size: 30px;
+  }
+
+  .laboratory-backgrounds h4,
+  .laboratory-skins h4,
+  .laboratory-mouths h4,
+  .laboratory-eyes h4,
+  .laboratory-glasses h4,
+  .laboratory-clothes h4,
+  .laboratory-heads h4 {
+    margin-bottom: 20px;
+  }
+
+  .scroll-right,
+  .scroll-left {
+    height: 64px;
+    width: 55px;
+  }
+
+  .pfp-container {
+    padding: 0px 0 30px;
+  }
+
+  .pfp {
+    height: 280px;
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  body {
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  main {
+    flex-direction: column;
+  }
+
+  .laboratory {
+    order: 2;
+    margin-top: 50px;
+  }
+
+  .pfp-display {
+    order: 1;
+  }
+
+  .back-button {
+    font-size: 22px;
+    padding: 10px;
+    width: fit-content;
+  }
+
+  .header-el {
+    width: 180px;
+  }
+
+  main {
+    padding: 30px 150px;
+  }
+
+  .laboratory-container {
+    padding: 30px 0px;
+  }
+
+  .laboratory-background,
+  .laboratory-skin,
+  .laboratory-mouth,
+  .laboratory-eye,
+  .laboratory-glasse,
+  .laboratory-clothe,
+  .laboratory-head {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  .laboratory-backgrounds-wraper,
+  .laboratory-skins-wraper,
+  .laboratory-mouths-wraper,
+  .laboratory-eyes-wraper,
+  .laboratory-glasses-wraper,
+  .laboratory-clothes-wraper,
+  .laboratory-heads-wraper {
+    width: 600px;
+  }
+
+  .laboratory-title,
+  .laboratory-elements {
+    padding: 0px 30px;
+  }
+
+  .laboratory-elements {
+    height: 500px;
+  }
+
+  .laboratory-title {
+    font-size: 40px;
+  }
+
+  .laboratory-backgrounds h4,
+  .laboratory-skins h4,
+  .laboratory-mouths h4,
+  .laboratory-eyes h4,
+  .laboratory-glasses h4,
+  .laboratory-clothes h4,
+  .laboratory-heads h4 {
+    margin-bottom: 25px;
+  }
+
+  .scroll-right,
+  .scroll-left {
+    height: 84px;
+    width: 65px;
+  }
+
+  .pfp-container {
+    padding: 0px 0 30px;
+  }
+
+  .pfp {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    margin: auto;
+    display: block;
+  }
+
+  .back-button {
+    font-size: 20px;
+    order: 2;
+    margin: 40px auto;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .back-button {
+    font-size: 20px;
+    transform: rotate(0);
+    order: 2;
+  }
+  main {
+    padding: 60px 25px;
+  }
+
+  .laboratory-background,
+  .laboratory-skin,
+  .laboratory-mouth,
+  .laboratory-eye,
+  .laboratory-glasse,
+  .laboratory-clothe,
+  .laboratory-head {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .scroll-right,
+  .scroll-left {
+    height: 64px;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  nav {
+    justify-content: center;
+  }
+
+  .back-button {
+    font-size: 20px;
+    transform: rotate(0);
+    order: 2;
+  }
+  main {
+    padding: 60px 15px;
+  }
+
+  .laboratory-title {
+    font-size: 30px;
+  }
+}

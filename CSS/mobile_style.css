@@ -1,0 +1,247 @@
+@media only screen and (max-width: 600px) {
+  nav {
+    margin: 20px 0 80px;
+    justify-content: center;
+  }
+
+  .social-media div {
+    font-size: 20px;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .logo {
+    width: 320px;
+  }
+
+  .header-img {
+    height: 550px;
+    width: 550px;
+    position: absolute;
+    left: -12.5%;
+  }
+
+  .about {
+    padding: 80px 0px;
+    text-align: center;
+    display: block;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .about-text {
+    padding-left: 0px;
+  }
+
+  .about-text p,
+  .exchange-text {
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+
+  .about-text a {
+    font-size: 30px;
+    padding: 5px 15px;
+  }
+
+  .about-img-2 {
+    display: inline;
+    width: 300px;
+  }
+
+  .token {
+    padding: 20px 20px 0;
+  }
+
+  .token-title {
+    font-size: 40px;
+  }
+
+  .token-container {
+    padding: 5px;
+    font-size: 14.75px;
+  }
+
+  .copy-button {
+    margin-left: 20px;
+    font-size: 20px;
+    box-shadow: none;
+  }
+
+  .memes {
+    width: 100%;
+  }
+
+  .right-effect {
+    right: -10px;
+  }
+
+  .social {
+    padding: 10px;
+  }
+
+  .social-container {
+    padding: 0px 10px 30px;
+  }
+
+  .social-img {
+    display: none;
+  }
+
+  .social-text {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .social-text h2 {
+    font-size: 30px;
+  }
+
+  .social-text p {
+    font-size: 18px;
+  }
+
+  .social-link {
+    font-size: 25px;
+  }
+
+  .questions {
+    padding: 80px 10px;
+  }
+
+  .questions-title {
+    font-size: 40px;
+  }
+
+  .questions-container {
+    margin-top: 80px;
+    display: block;
+  }
+
+  .questions-img {
+    display: none;
+  }
+
+  .accordion-container {
+    width: 95%;
+    margin: auto;
+  }
+
+  footer {
+    padding: 10px 0px 40px;
+    display: block;
+    text-align: center;
+  }
+
+  .footer-img {
+    width: 200px;
+  }
+
+  .footer-text {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .footer-text h2 {
+    color: #ffd200;
+    margin-bottom: 10px;
+  }
+
+  .footer-text p {
+    font-size: 22px;
+    color: white;
+  }
+
+  .footer-text span {
+    color: #98d3f3;
+  }
+
+  .footer-background {
+    height: 100%;
+  }
+
+  .token-element-container img {
+    width: 200px;
+  }
+
+  .musicFirstPanel {
+    height: 100%;
+  }
+
+  .musicFirstPanel-logo {
+    width: 350px;
+  }
+
+  .enter-music-button img {
+    width: 200px;
+  }
+
+  .social-media-dextools-img {
+    width: 22px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    width: 280px;
+  }
+
+  
+
+  .about {
+    padding-bottom: 0;
+  }
+
+  .header-img {
+    height: 400px;
+    width: 400px;
+    left: -4%;
+  }
+
+  .about-text {
+    padding: 0 20px;
+  }
+
+  .about-text p,
+  .exchange-text {
+    font-size: 20px;
+  }
+
+  .token {
+    padding: 20px 10px 0;
+  }
+
+  .token-title {
+    font-size: 35px;
+  }
+
+  .token-container {
+    padding: 2px;
+    font-size: 12px;
+  }
+
+  .copy-button {
+    margin-left: 15px;
+    font-size: 18px;
+    box-shadow: none;
+  }
+
+  .exchange-section {
+    padding-bottom: 60px;
+  }
+
+  .exchange-platforms {
+    margin-bottom: 40px;
+  }
+
+  .exchange-platform {
+    width: 300px;
+    height: 120px;
+  }
+}

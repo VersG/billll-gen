@@ -1,0 +1,176 @@
+@media only screen and (max-width: 1030px) {
+  nav {
+    margin-bottom: 60px;
+  }
+
+  .header-img {
+    left: 12%;
+    width: 800px;
+    height: 800px;
+  }
+
+  .about {
+    padding: 80px 0px;
+    text-align: center;
+    display: block;
+  }
+
+  .about-img {
+    width: 500px;
+  }
+
+  .about-text {
+    width: 80%;
+  }
+
+  .about-text p {
+    font-size: 28px;
+  }
+
+  .about-text a {
+    font-size: 35px;
+    padding: 5px 15px;
+  }
+
+  .about-button {
+    margin: auto;
+  }
+
+  .right-effect {
+    right: -10px;
+  }
+
+  .social {
+    padding: 35px;
+  }
+
+  .social-container {
+    padding: 0px 15px 0px;
+  }
+
+  .social-text {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .social-text h2 {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .social-text p {
+    font-size: 20px;
+  }
+
+  .social-link {
+    font-size: 25px;
+  }
+
+  .questions {
+    padding: 80px 10px;
+  }
+
+  .questions-title {
+    font-size: 40px;
+  }
+
+  .questions-container {
+    margin-top: 80px;
+    display: flex;
+  }
+
+  .questions-img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .accordion {
+    width: 85%;
+  }
+
+  .accordion-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .accordion-content p {
+    font-size: 20px;
+  }
+
+  .accordion-header {
+    font-size: 22px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+
+  .footer-text {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .footer-text p {
+    font-size: 25px;
+  }
+
+  .about-text {
+    padding-left: 0px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .token-element-container {
+    flex-direction: column;
+  }
+
+  .token-element-container img {
+    width: 300px;
+    margin: auto;
+    display: block;
+  }
+
+  .token-container {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header-img {
+    left: 2.5%;
+  }
+
+  .social-text p {
+    font-size: 18px;
+  }
+
+  .footer-text p {
+    font-size: 20px;
+  }
+
+  .footer-img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-img {
+    left: 0%;
+  }
+
+  .social-text h2 {
+    font-size: 28px;
+  }
+
+  .social-text p {
+    font-size: 17px;
+  }
+
+  .footer-text p {
+    font-size: 20px;
+  }
+
+  .footer-img {
+    width: 300px;
+  }
+}

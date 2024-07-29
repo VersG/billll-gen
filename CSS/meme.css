@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "Menco_Black";
+  src: url("../Fonts/fonnts.com-Menco_Black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "cutsey";
+  src: url("../Fonts/Cutesy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cuteDino";
+  src: url("../Fonts/Cute\ Dino.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "comic";
+  src: url("../Fonts/COMIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "newImpact";
+  src: url("../Fonts/Impact.ttf") format("truetype");
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+[contenteditable]:focus {
+  border: 2px solid #ffd200;
+  padding: 0 2.5px;
+}
+
+body {
+  background-color: #98d3f3;
+  height: fit-content;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  padding-bottom: 80px;
+  color: #293975;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 80px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.header-el {
+  width: 250px;
+}
+
+.back-button {
+  align-items: center;
+  background-color: #ffd200;
+  box-shadow: rgba(89, 124, 255, 1) 7px 7px;
+  cursor: pointer;
+  color: #597cff;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transform: rotate(-5deg);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: fit-content;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.slogan {
+  color: white;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: -0px -0px 0 #597cff, 0px 0px 0 #597cff, -0px 0px 0 #597cff,
+    3px 3px 0 #597cff;
+}
+
+.download-button {
+  box-shadow: rgba(89, 124, 255, 1) 7px 7px;
+  width: fit-content;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: auto;
+  cursor: pointer;
+  background-color: #ffd200;
+  color: #597cff;
+  margin-top: 0px;
+  transform: rotate(-3deg);
+}
+
+.text-editor {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 40px;
+  font-size: 25px;
+  color: #2b2b4f;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size-editor {
+  display: flex;
+  align-items: center;
+}
+
+.text-size {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.increase-size,
+.decrease-size {
+  background-color: #597cff;
+  padding: 2px 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.current-text-size {
+  color: white;
+  background-color: #597cff;
+  padding: 0 5px;
+  border: 2px solid white;
+}
+
+.editor-section {
+  padding: 20px;
+}
+
+.color-editor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.color-editor-black,
+.color-editor-white {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-editor-black {
+  outline: 4px solid #597cff;
+  margin-right: 15px;
+  background-color: black;
+}
+
+.color-editor-white {
+  background-color: white;
+  border: 4px solid #597cff;
+}
+
+.text-editor-weight-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weight-editor {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.weight-editor strong,
+.weight-editor i {
+  border: 3px solid #597cff;
+  padding: 5px 7.5px;
+}
+
+.weight-editor strong {
+  margin-right: 15px;
+}
+
+.font-editor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  width: 100%;
+}
+
+.font-editor select {
+  background-color: #597cff;
+  color: white;
+  border: 2px solid white;
+  font-size: 25px;
+}
+
+.font-editor select:focus {
+  outline: none;
+}
+
+.text-editor-font-rotate {
+  margin-bottom: 30px;
+}
+
+.text-rotation {
+  font-size: 25px;
+  margin: auto;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-rotation-input {
+  font-size: 25px;
+  width: 60px;
+  background-color: #597cff;
+  border: 3px solid white;
+  color: white;
+}
+
+.text-rotation-input:focus {
+  outline: none;
+}
+
+.non-selectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version */
+}
+
+.editor-label {
+  font-size: 25px;
+  margin: 0 20px 0 0;
+  color: #ffd200;
+}
+
+.delete-btn {
+  position: absolute;
+  background-color: #ff4d6d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.rotate-handle {
+  position: absolute;
+  background-color: #ffd200;
+  clip-path: circle();
+  cursor: grab;
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.editor-section {
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+  padding: 40px 40px;
+  margin-bottom: 60px;
+  box-shadow: rgba(89, 124, 255, 1) 7px 7px;
+  font-family: "Menco_Black";
+}
+
+.editor-label-input-container,
+.size-editor,
+select {
+  width: 190px;
+}
+
+.resize-dot {
+  position: absolute;
+  bottom: -7.5px;
+  right: -7.5px;
+  width: 17.5px;
+  height: 17.5px;
+  background-color: #ffd200;
+  cursor: se-resize;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .back-button {
+    font-size: 25px;
+    padding: 10px 5px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .slogan {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .back-button {
+    font-size: 22px;
+    padding: 10px;
+    width: fit-content;
+  }
+
+  .download-button {
+    margin: 40px 0;
+  }
+
+  .header-el {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    margin: auto;
+    display: block;
+  }
+
+  .back-button {
+    font-size: 20px;
+    order: 2;
+    margin: 40px auto;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .back-button {
+    font-size: 20px;
+    transform: rotate(0);
+    order: 2;
+  }
+
+  .text-editor {
+    margin: 40px auto 30px;
+    font-size: 23px;
+  }
+
+  .text-size {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .increase-size,
+  .decrease-size {
+    background-color: #597cff;
+    padding: 5px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    height: fit-content;
+  }
+
+  .text-size span {
+    display: none;
+  }
+
+  .text-size .current-text-size {
+    color: white;
+    display: block;
+    font-size: 30px;
+  }
+
+  .editor-section {
+    padding: 26px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  nav {
+    justify-content: center;
+  }
+
+  .back-button {
+    font-size: 20px;
+    transform: rotate(0);
+    order: 2;
+  }
+
+  .editor-section {
+    padding: 15px;
+  }
+}
