@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="CSS/animation.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="/Imgs/Icon.PNG" />
+    <link rel="stylesheet" href="CSS/music.css" />
+
+    <link rel="stylesheet" href="CSS/screen_style.css" />
+    <link rel="stylesheet" href="CSS/tablet_style.css" />
+    <link rel="stylesheet" href="CSS/mobile_style.css" />
+    <link rel="stylesheet" href="CSS/loading.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      onload="startApp()"
+    ></script>
+
+    <title>Bill The Bear</title>
+  </head>
+  <script>
+    console.log("test deploy");
+  </script>
+
+  <body>
+    <header>
+      <nav>
+        <div class="social-media hidden">
+          <div>
+            <a href="https://x.com/billthebearmeme" target="_blank"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://t.me/billthebear" target="_blank"
+              ><i class="bi bi-telegram"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://www.dextools.io/app/en/solana/pair-explorer/7AAdTWLTgDCpAE1wXtPpGBstMVQtQhvftKcxkeC8H4FR?t=1721405015226"
+              target="_blank"
+              style="display: flex; align-items: center"
+              ><img
+                class="social-media-dextools-img"
+                src="Imgs/dextools.svg"
+                alt="dextools icon"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://dexscreener.com/solana/7aadtwltgdcpae1wxtppgbstmvqtqhvftkcxkec8h4fr"
+              target="_blank"
+              style="display: flex; align-items: center"
+              ><img
+                class="social-media-dextools-img"
+                src="Imgs/dexscreener.png"
+                alt="dexscreener icon"
+            /></a>
+          </div>
+          <!-- <div>
+            <a href=""><i class="bi bi-instagram"></i></a>
+          </div> -->
+        </div>
+        <a href="laboratory.html" class="nav-button hidden">
+          <span><i class="bi bi-palette"></i> Bear Factory</span>
+        </a>
+      </nav>
+      <img class="logo hidden" src="Imgs/Logo.png" alt="Bill the bear logo" />
+      <div class="header-img hidden"></div>
+    </header>
+    <div id="content">
+      <div class="suprator-container">
+        <div class="suprator" style="transform: rotate(5deg)">
+          <div class="scrolling-text" style="transform: rotate(20deg)">
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+          </div>
+        </div>
+        <div class="blue-suprator" style="transform: rotate(-3deg)"></div>
+      </div>
+
+      <section class="about">
+        <img
+          class="about-img hidden hidden"
+          src="./Imgs/About.PNG"
+          alt="About the bear"
+        />
+        <div class="about-text hidden hidden-bottom">
+          <h2 class="about-title">MEET BILL THE BEAR!</h2>
+          <p>
+            Bill is your favorite internet bestie! He got lost at a young age
+            and ended up being raised by a peculiar set of parents. Join him as
+            he looks to make frens on his journey exploring the internet.
+          </p>
+          <a
+            href="https://x.com/billthebearmeme"
+            target="_blank"
+            class="bouncing about-button"
+            ><i class="bi bi-arrow-right-square-fill"></i> Follow me on X</a
+          >
+        </div>
+
+        <img
+          class="about-img-2 hidden hidden-bottom"
+          src="./Imgs/About.PNG"
+          alt="About the bear"
+        />
+      </section>
+
+      <section class="exchange-section">
+        <h2 class="memes-title hidden hidden-bottom">EXCHANGES</h2>
+        <p class="exchange-text">
+          Bill is available for tradin on major exhanges.
+        </p>
+        <div class="exchange-platforms">
+          <a
+            target="_blank"
+            href="https://www.lbank.com/trade/bill_usdt"
+            class="exchange-platform"
+          >
+            <img src="Imgs/exchanges/lbank.png" alt="lbank logo" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.bitmart.com/trade/en-US?symbol=BILL_USDT"
+            class="exchange-platform"
+          >
+            <img src="Imgs/exchanges/bitmart.svg" alt="lbank logo" />
+          </a>
+          <a
+            id="mexc"
+            target="_blank"
+            href="https://www.mexc.com/exchange/BILL_USDT?_from=search"
+            class="exchange-platform"
+          >
+            <img src="Imgs/exchanges/Mexc.png" alt="lbank logo" width="65%" />
+          </a>
+          <a
+            target="_blank"
+            href="https://poloniex.com/trade/BILL_USDT/?type=spot"
+            class="exchange-platform"
+          >
+            <img src="Imgs/exchanges/poloniex.svg" alt="lbank logo" />
+          </a>
+        </div>
+        <p class="exchange-text">More exchange listings are on the way.</p>
+      </section>
+
+      <section class="token">
+        <div>
+          <h2 class="token-title hidden hidden-top">ON CHAIN ADDRESS</h2>
+          <div class="token-element-container">
+            <div class="token-container hidden hidden-bottom">
+              <div id="text-to-copy">
+                5o817YNoR97F1h5suzBghwc8dP53oureRuFbgJiaCFuZ
+              </div>
+              <div id="copy-button" class="copy-button">COPY</div>
+            </div>
+            <img src="Imgs/IMG_1096.gif" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="memes-section">
+        <h2 class="memes-title hidden hidden-bottom">MEMES</h2>
+        <div class="memes">
+          <div class="scroll-line left-to-right">
+            <div class="scrolling-content">
+              <div class="meme"><img src="Imgs/memes/1.png" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/2.png" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/4.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/5.png" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/6.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/7.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/8.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/9.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/1.png" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/2.png" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/4.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/5.png" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/6.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/7.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/8.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/9.webp" alt="" /></div>
+            </div>
+          </div>
+          <div class="scroll-line right-to-left">
+            <div class="scrolling-content">
+              <div class="meme"><img src="Imgs/memes/20.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/22.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/23.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/24.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/25.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/26.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/27.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/28.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/20.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/22.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/23.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/24.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/25.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/26.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/27.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/28.webp" alt="" /></div>
+            </div>
+          </div>
+          <div class="scroll-line left-to-right">
+            <div class="scrolling-content">
+              <div class="meme"><img src="Imgs/memes/10.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/12.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/11.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/13.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/14.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/15.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/17.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/19.webp" alt="" /></div>
+
+              <div class="meme"><img src="Imgs/memes/10.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/12.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/11.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/13.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/14.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/15.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/17.webp" alt="" /></div>
+              <div class="meme"><img src="Imgs/memes/19.webp" alt="" /></div>
+            </div>
+          </div>
+          <div class="memes-effect left-effect"></div>
+          <div class="memes-effect right-effect"></div>
+          <div class="memes-bottom">
+            <a href="meme.html" id="openModalBtn" class="memes-button bouncing">
+              Create your own
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="social">
+        <div class="social-container hidden hidden-bottom">
+          <img class="social-img" src="Imgs/Social.PNG" alt="" />
+          <div class="social-text">
+            <h2>BILL WANTS YOU!</h2>
+            <p>
+              JOIN THE TIGHT KNIT BILL FAMILY BY JUMPING INTO OUR TELEGRAM! WE
+              ARE WAITING TO GIVE YOU A NICE BIG BEAR HUG. MAKE SURE TO FOLLOW
+              US ON X FOR A GLIMPSE INTO BILL'S DAILY ADVENTURES AND HAPPENINGS.
+            </p>
+            <a
+              class="social-link"
+              href="https://t.me/billthebear"
+              target="_blank"
+              >Telegram</a
+            >
+            <a
+              class="social-link"
+              href=" https://x.com/billthebearmeme"
+              target="_blank"
+              >Twitter</a
+            >
+          </div>
+        </div>
+        <div class="social-container social-lab-container hidden hidden-bottom">
+          <img class="social-img" src="Imgs/lab.gif" alt="" />
+          <div class="social-text">
+            <h2>BUILD A BEAR</h2>
+            <p>
+              AS ANY GOOD BESTIE WOULD, BILL IS HERE TO HELP YOU FIND YOUR STYLE
+              SO YOU CAN ROCK IT EVERYWHERE JUST LIKE HIM!
+            </p>
+            <a class="social-link" href="laboratory.html">GO TO FACTORY</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="laboratory">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#597cff"
+          fill-opacity="1"
+          d="M0,288L80,250.7C160,213,320,139,480,96C640,53,800,43,960,74.7C1120,107,1280,181,1360,218.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+
+      <div class="laboratory-main">
+        <h2 class="hidden">BEER LABORATORY</h2>
+        <p class="hidden">
+          DO YOU LIKE PENG? SHOW IT TO EVERYONE! NOW YOU CAN GENERATE YOUR OWN
+          RANDOM AVATAR.
+        </p>
+        <a
+          href="laboratory.html"
+          class="laboratory-button hidden stobe-animation"
+        >
+          <span><i class="bi bi-palette"></i> Bear Laboratory</span>
+        </a>
+        <div class="laboratory-img hidden"></div>
+      </div>
+    </section> -->
+
+      <div class="suprator-container">
+        <div class="suprator" style="transform: rotate(-5deg)">
+          <div class="scrolling-text">
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+            <span>BILL THE BEAR</span> <span>BILL THE BEAR</span>
+          </div>
+        </div>
+        <div class="blue-suprator" style="transform: rotate(3deg)"></div>
+      </div>
+
+      <section class="questions">
+        <h2 class="questions-title hidden hidden-bottom">ANY QUESTIONS?</h2>
+        <div class="questions-container">
+          <div class="accordion-container">
+            <div class="accordion">
+              <div
+                class="accordion-item hidden hidden-bottom net1"
+                style="
+                  transform: rotate(5deg);
+                  box-shadow: rgba(255, 210, 0, 1) 7px 7px;
+                "
+              >
+                <div class="accordion-header">
+                  HOW DID BILL BECOME SUCH A VIRAL SENSATION?
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Bill is one of the most relatable and loveable bears on the
+                    internet. He loves to document his journey in discovering
+                    different pockets of the internet and applying his newly
+                    learned lessons to his every day life!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="accordion-item hidden hidden-bottom net3"
+                style="box-shadow: rgba(255, 210, 0, 1) 7px 7px"
+              >
+                <div class="accordion-header">
+                  HOW CAN I BECOME BESTIES WITH BILL?
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Bill loves to hang out with all of his besties in a variety
+                    of different social media rooms. You can find all of his
+                    socials from X (twitter) to TG on this website. He is also
+                    working on launching other social media accounts over the
+                    next month.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="accordion-item hidden hidden-bottom net5"
+                style="
+                  transform: rotate(-5deg);
+                  box-shadow: rgba(255, 210, 0, 1) 7px 7px;
+                "
+              >
+                <div class="accordion-header">
+                  HOW DID BILL GET SO POPULAR IN THE DUCK COMMUNITY?
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Bill was adopted by a Duck couple as an infant. They found
+                    him flowing down river after a tragedy had struck his
+                    biological family.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="questions-img hidden"></div>
+          <div class="accordion-container">
+            <div class="accordion">
+              <div
+                class="accordion-item hidden hidden-bottom net2"
+                style="
+                  transform: rotate(-5deg);
+                  box-shadow: rgba(255, 210, 0, 1) -7px 7px;
+                "
+              >
+                <div class="accordion-header">
+                  WHERE DID BILL GET HIS AMAZING SENSE OF STYLE?!
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Bill was able to nourish his amazing creativity due to the
+                    unique circumstances he was in growing up! Never being Bear
+                    enough for the Bears yet not being Duck enough for the Ducks
+                    really gave him a unique perspective on not only his sense
+                    of style but on the whole world.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="accordion-item hidden hidden-bottom net4"
+                style="box-shadow: rgba(255, 210, 0, 1) -7px 7px"
+              >
+                <div class="accordion-header">
+                  WHAT'S NEXT FOR BILL THE BEAR?
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Bill has met some amazing besties on the internet over the
+                    last 5 years, and he's excited to share his future plans
+                    with everyone soon. He always tells his closest besties the
+                    news first though, so make sure you're following him on
+                    Telegram and X!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="accordion-item hidden hidden-bottom net6"
+                style="
+                  transform: rotate(5deg);
+                  box-shadow: rgba(255, 210, 0, 1) -7px 7px;
+                "
+              >
+                <div class="accordion-header">
+                  HOW DID BILL DISCOVER THE INTERNET?
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Bill had a hard time initially getting accepted by the duck
+                    community. His Duck parents gifted him a laptop for his 12th
+                    birthday and there was no looking back from there.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bear-effect-container"></div>
+      </section>
+
+      <footer>
+        <div class="footer-text">
+          <h2>BILL IS WAITING TO ROCK OUT WITH YOU</h2>
+          <div class="footer-links">
+            <a href=" https://x.com/billthebearmeme" target="_blank"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+            <a href="https://t.me/billthebear" target="_blank"
+              ><i class="bi bi-telegram"></i
+            ></a>
+            <!-- <a href="#"><i class="bi bi-instagram"></i></a> -->
+          </div>
+          <span>&copy; 2024 BEAR. BILL THE BEAR. </span>
+        </div>
+        <img class="footer-img" src="Imgs/footer.gif" />
+        <div class="footer-background"></div>
+      </footer>
+    </div>
+
+    <div id="music-button" class="music">
+      <i id="music-button-icon" class="bi bi-pause-fill"></i>
+    </div>
+
+    <div id="loading" class="loading">
+      <div>
+        <img
+          class="loading-img"
+          src="Imgs/loading.gif"
+          alt="running bear for loading"
+        />
+        <div class="loading-text">
+          <span class="loading-char">L</span>
+          <span class="loading-char">O</span>
+          <span class="loading-char">A</span>
+          <span class="loading-char">D</span>
+          <span class="loading-char">I</span>
+          <span class="loading-char">N</span>
+          <span class="loading-char">G</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="musicFirstPanel">
+      <div>
+        <img
+          class="musicFirstPanel-logo hidden"
+          src="Imgs/Logo.png"
+          alt="Bill the bear logo"
+        />
+        <button id="enter-website" class="enter-music-button hidden">
+          <img src="Imgs/enterButton.png" alt="enter-button" />
+        </button>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script> -->
+
+    <script src="JS/animation.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/music.js"></script>
+    <script src="JS/loading.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
+</html>
