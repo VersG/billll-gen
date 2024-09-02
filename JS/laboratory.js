@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createBearText() {
     const bearText = document.createElement("div");
     bearText.classList.add("bear-text");
-    bearText.textContent = "BILL";
+    bearText.textContent = "De[tards]";
     document.body.appendChild(bearText);
 
     // Randomize position
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { opacity: 0, transform: "scale(2)" },
       ],
       {
-        duration: 2000 + Math.random() * 1000, // Duration between 2 to 3 seconds
+        duration: 1000 + Math.random() * 1000, // Duration between 2 to 3 seconds
         easing: "ease-in-out",
         iterations: 1,
         fill: "forwards", // Ensure the element remains at the end keyframe
