@@ -271,7 +271,7 @@ main {
 
 .bear-text {
   position: fixed;
-  color: #597dff94;
+  color: #ffffffff;
   font-weight: bold;
   white-space: nowrap;
   z-index: -9999;
