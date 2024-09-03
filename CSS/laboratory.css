@@ -253,8 +253,8 @@ main {
 }
 
 .random-button {
-  background-color: white;
-  color: #597cff;
+  background-color: black;
+  color: #ffffffff;
   transform: rotate(3deg);
 }
 
