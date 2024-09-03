@@ -6,9 +6,9 @@ body {
   font-family: "Oswald", sans-serif;
   position: relative;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 1)
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1)
     ),
     url("../Imgs/background.png");
 
