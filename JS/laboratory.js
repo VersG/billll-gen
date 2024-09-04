@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { opacity: 0, transform: "scale(2)" },
       ],
       {
-        duration: 1000 + Math.random() * 1000, // Duration between 2 to 3 seconds
+        duration: 500 + Math.random() * 500, // Duration between 2 to 3 seconds
         easing: "ease-in-out",
         iterations: 1,
         fill: "forwards", // Ensure the element remains at the end keyframe
