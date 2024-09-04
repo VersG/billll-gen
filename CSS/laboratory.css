@@ -243,7 +243,7 @@ main {
 
 .random-button,
 .download-button {
-  box-shadow: rgba(255, 0, 0, 1) 7px 7px;
+  box-shadow: rgba(0, 0, 0, 0.4) 7px 7px;
   width: fit-content;
   padding: 10px;
   font-size: 25px;
@@ -260,7 +260,7 @@ main {
 
 .download-button {
   background-color: #000000;
-  color: #ff0303;
+  color: #26ff38;
   margin-top: 30px;
   transform: rotate(-3deg);
 }
