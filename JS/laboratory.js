@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function repeatBearText() {
     setInterval(() => {
       createBearText();
-    }, 500); // Interval between each creation (in milliseconds)
+    }, 100); // Interval between each creation (in milliseconds)
   }
 
   // Start creating bear text
