@@ -49,8 +49,8 @@ nav {
 h2 {
   font-size: 75px;
   color: white;
-  text-shadow: -0px -0px 0 #597cff, 0px 0px 0 #597cff, -0px 0px 0 #597cff,
-    3px 3px 0 #597cff;
+  text-shadow: -0px -0px 0 #000000, 0px 0px 0 #000000, -0px 0px 0 #000000,
+    3px 3px 0 #000000;
 }
 
 .social-media {
@@ -83,7 +83,7 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  color: #597cff;
+  color: #000000;
   font-family: "Oswald", sans-serif;
   font-weight: bolder;
   font-size: 30px;
@@ -146,7 +146,7 @@ h2 {
 
 .blue-suprator {
   height: 65px;
-  background-color: #597cff;
+  background-color: #000000;
   z-index: 11;
   top: 0;
 }
@@ -205,7 +205,7 @@ f} */
 
 .about-text a {
   font-size: 30px;
-  color: #597cff;
+  color: #000000;
   background-color: #ffd200;
   padding: 5px 15px;
   box-shadow: rgba(89, 124, 255, 1) 7px 7px;
@@ -222,7 +222,7 @@ f} */
 /* TOKEN */
 
 .token {
-  background-color: #597cff;
+  background-color: #000000;
   padding: 60px 60px 0;
   font-family: "Oswald", sans-serif;
 }
@@ -249,7 +249,7 @@ f} */
   font-size: 25px;
   background-color: #ffd200;
   padding: 15px;
-  color: #597cff;
+  color: #000000;
   box-shadow: rgba(89, 124, 255, 1) 7px 7px;
   cursor: pointer;
 }
@@ -293,7 +293,7 @@ f} */
   display: inline-block;
   width: 200px;
   height: 200px;
-  background-color: #597cff;
+  background-color: #000000;
   margin-right: 20px;
 }
 
@@ -394,7 +394,7 @@ f} */
 }
 
 .social-text h2 {
-  color: #597cff;
+  color: #000000;
   font-size: 35px;
   text-shadow: none;
 }
@@ -470,7 +470,7 @@ a {
 }
 
 .accordion-header {
-  background-color: #597cff;
+  background-color: #000000;
   color: white;
   padding: 15px 20px;
   cursor: pointer;
@@ -585,7 +585,7 @@ footer {
 }
 
 .footer-background {
-  background-color: #597cff;
+  background-color: #000000;
   width: 100%;
   position: absolute;
   height: 80%;
@@ -642,7 +642,7 @@ footer {
 }
 
 .laboratory-main {
-  background-color: #597cff;
+  background-color: #000000;
   padding-bottom: 550px;
   overflow: hidden;
 }
@@ -712,7 +712,7 @@ footer {
 }
 
 .exchange-platform {
-  background-color: #597cff;
+  background-color: #000000;
   width: 350px;
   height: 150px;
   display: flex;
