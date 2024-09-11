@@ -27,14 +27,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  border: 5px solid #ffd200;
+  border: 5px solid #000000;
   margin: 0 100px 80px;
   font-size: 25px;
   overflow: hidden;
 }
 
 .modal-tuto-text {
-  color: #ffd200;
+  color: #000000;
   font-size: 45px;
   text-align: center;
   transform: rotate(-20deg);
@@ -106,7 +106,7 @@ div.modal-scrollmenu {
   background-color: white;
   margin: auto;
   margin-top: 80px;
-  scrollbar-color: #ffd200 white;
+  scrollbar-color: #000000 white;
   box-shadow: rgba(89, 124, 255, 1) 7px 7px;
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +114,7 @@ div.modal-scrollmenu {
 }
 
 .modal-pictures {
-  background-color: #98d3f3;
+  background-color: #000000;
   width: 120px;
   height: 120px;
   display: inline-block;
