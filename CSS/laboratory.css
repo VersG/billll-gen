@@ -1,5 +1,4 @@
 body {
-  background-color: #000000;
   min-height: fit-content;
   height: 100vh;
   margin: 0;
@@ -92,7 +91,6 @@ main {
 
 .laboratory-container {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.7) 7px 7px;
   color: #000000;
   padding: 40px 0px;
 }
