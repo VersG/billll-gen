@@ -255,14 +255,12 @@ main {
 .random-button {
   background-color: black;
   color: #ffffffff;
-  transform: rotate(3deg);
 }
 
 .download-button {
   background-color: #000000;
   color: #26ff38;
   margin-top: 30px;
-  transform: rotate(-3deg);
 }
 
 .hidden-lab {
