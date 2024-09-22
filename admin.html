@@ -1,33 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PFP Generator Admin Panel</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .scrollable {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .gradient-mask {
+            position: relative;
+        }
+        .gradient-mask::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            background: linear-gradient(to left, rgba(36, 36, 36, 1), rgba(36, 36, 36, 0));
+            pointer-events: none;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>Traits</h2>
-            <ul>
-                <li data-trait="Background">Background</li>
-                <li data-trait="Eyes">Eyes</li>
-                <li data-trait="Mouth">Mouth</li>
-                <li data-trait="Hats">Hats</li>
-                <li data-trait="Accessories">Accessories</li>
-            </ul>
+<body class="bg-gray-900">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/6 bg-gray-800 h-screen p-4 space-y-4 text-gray-400 rounded-r-lg relative">
+            <div class="bg-gray-700 h-12 rounded flex items-center justify-center">Menu 1</div>
+            <div class="bg-gray-700 h-12 rounded flex items-center justify-center">Menu 2</div>
+            <div class="bg-gray-700 h-12 rounded flex items-center justify-center">Menu 3</div>
+            <div class="bg-gray-700 h-12 rounded flex items-center justify-center">Menu 4</div>
+            <div class="bg-gray-700 h-12 rounded flex items-center justify-center">Menu 5</div>
+            <div class="absolute bottom-4 w-full px-4 flex flex-col items-center">
+                <button class="bg-blue-500 w-full h-12 rounded flex items-center justify-center text-white">Login</button>
+            </div>
         </div>
-        <div class="content">
-            <div class="trait-container" data-trait="Background">
-                <h2>Background</h2>
-                <div class="traits">
-                    <!-- Trait items will be loaded here -->
+        <!-- Main Content -->
+        <div class="w-5/6 p-4 space-y-4">
+            <!-- First Row -->
+            <div class="scrollable gradient-mask flex space-x-4">
+                <div class="bg-gray-700 w-32 h-32 rounded flex items-center justify-center inline-block">
+                    <span class="text-gray-400 text-4xl">+</span>
                 </div>
-                <button class="add-trait">Add Trait</button>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+            </div>
+            <!-- Second Row -->
+            <div class="scrollable gradient-mask flex space-x-4">
+                <div class="bg-gray-700 w-32 h-32 rounded flex items-center justify-center inline-block">
+                    <span class="text-gray-400 text-4xl">+</span>
+                </div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+            </div>
+            <!-- Third Row -->
+            <div class="scrollable gradient-mask flex space-x-4">
+                <div class="bg-gray-700 w-32 h-32 rounded flex items-center justify-center inline-block">
+                    <span class="text-gray-400 text-4xl">+</span>
+                </div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+            </div>
+            <!-- Fourth Row -->
+            <div class="scrollable gradient-mask flex space-x-4">
+                <div class="bg-gray-700 w-32 h-32 rounded flex items-center justify-center inline-block">
+                    <span class="text-gray-400 text-4xl">+</span>
+                </div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
+                <div class="bg-gray-800 w-32 h-32 rounded inline-block"></div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
