@@ -178,25 +178,25 @@ function getRandomInt(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Function to create and animate the bear text
-  function createBearText() {
-    const bearText = document.createElement("div");
-    bearText.classList.add("bear-text");
-    bearText.textContent = "De[tards]";
-    document.body.appendChild(bearText);
+  // Function to create and animate the detards text
+  function createdetardsText() {
+    const detardsText = document.createElement("div");
+    detardsText.classList.add("detards-text");
+    detardsText.textContent = "De[tards]";
+    document.body.appendChild(detardsText);
 
     // Randomize position
     const posX = Math.random() * window.innerWidth;
     const posY = Math.random() * window.innerHeight;
-    bearText.style.left = `${posX}px`;
-    bearText.style.top = `${posY}px`;
+    detardsText.style.left = `${posX}px`;
+    detardsText.style.top = `${posY}px`;
 
     // Randomize size
     const fontSize = Math.random() * (40 - 20) + 20; // Random font size between 20 and 60
-    bearText.style.fontSize = `${fontSize}px`;
+    detardsText.style.fontSize = `${fontSize}px`;
 
     // Animation
-    bearText.animate(
+    detardsText.animate(
       [
         { opacity: 1, transform: "scale(0.2)" },
         { opacity: 1, transform: "scale(1.25)" },
@@ -211,18 +211,18 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // Remove the element after animation
-    bearText.addEventListener("animationend", () => {
-      bearText.remove();
+    detardsText.addEventListener("animationend", () => {
+      detardsText.remove();
     });
   }
 
-  // Function to repeatedly create bear text
-  function repeatBearText() {
+  // Function to repeatedly create detards text
+  function repeatdetardsText() {
     setInterval(() => {
-      createBearText();
+      createdetardsText();
     }, 100); // Interval between each creation (in milliseconds)
   }
 
-  // Start creating bear text
-  repeatBearText();
+  // Start creating detards text
+  repeatdetardsText();
 });
