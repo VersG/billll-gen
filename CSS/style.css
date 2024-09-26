@@ -504,7 +504,7 @@ a {
   border-bottom-right-radius: 0;
 }
 
-.bear-effect-container {
+.detards-effect-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -515,18 +515,18 @@ a {
   z-index: -5; /* Lower than .questions content */
 }
 
-.bear-effect {
+.detards-effect {
   position: absolute;
   font-size: 20px; /* Initial font size */
   font-weight: bold;
   color: #ffd200;
   opacity: 0;
-  animation: bear-animation 5s infinite;
+  animation: detards-animation 5s infinite;
   text-shadow: 0 0 10px rgba(255, 210, 0, 0.5), 0 0 20px rgba(255, 210, 0, 0.5),
     0 0 30px rgba(255, 210, 0, 0.5);
 }
 
-@keyframes bear-animation {
+@keyframes detards-animation {
   0% {
     opacity: 0;
     transform: scale(0.5) translate(0, 0);
